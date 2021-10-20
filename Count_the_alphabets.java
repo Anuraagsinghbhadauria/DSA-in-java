@@ -8,16 +8,16 @@ public class Count_the_alphabets {
         System.out.println("Enter n:");
         int n = sc.nextInt();
         System.out.println("Enter characters:");
-        char[] array = new char[n];
+        char[] array = new char[n]; //input
         for(int i = 0; i < n; i++){
-            array[i] = sc.next().charAt(0);
+            array[i] = sc.next().charAt(0); 
         }
         int[] count = new int[26];
         for(int i = 0; i < array.length ; i++){
             count[array[i]-'a']++;
         }
         for(int i = 0; i < count.length; i++){
-            System.out.println(count[i]+"   "+(char)(i+'a'));
+            System.out.println(count[i]+"   "+(char)(i+'a')); //printing output
         }
     }
 }
